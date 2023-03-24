@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Dārza sēšanas menedžmenta sistēma</h1>
+    <input id="vaguSkaits"
+    placeholder="Vagu skaits"
+    aria-label="Vagu skaits">
+
+    <input id="vaguGarums"
+    placeholder="Vagu garums"
+    aria-label="Vagu garums">
+    <select id="select">
+        <option value="">--Izvēlieties sējamo dārzeni--</option>
+        <option value="Kartupeļi">Kartupeļi</option>
+        <option value="Redīsi">Redīsi</option>
+        <option value="Galda Bietes">Sarkanās Bietes</option>
+        <option value="Zirņi">Zirņi</option>
+        <option value="Pupas">Pupas</option>
+        <option value="Sīpoli">Sīpoli</option>
+        <option value="ķiploki">ķiploki</option>
+        <option value="Kāposti">Kāposti</option>
+        <option value="Saulespuķes">Saulespuķes</option>
+        <option value="Sviesta pupas">Sviesta pupas</option>
+        <option value="Kaņepes">Kaņepes</option>
+        <option value="Dilles">Dilles</option>
+        <option value="Gurķi">Gurķi</option>
+        <option value="Zemenes">Zemenes</option>
+        <option value="Ķirbji">Ķirbji</option>
+        <option value="Paprika">Paprika</option>
+        <option value="Kabači">Kabači</option>
+        <option value="Burkāni">Burkāni</option>
+    </select>
+    <button type="button" id="btn-launch">Aprēķināt</button>
+
+
+    <ul id="ul"></ul>
+
+
+
+    <!--End of containers-->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
