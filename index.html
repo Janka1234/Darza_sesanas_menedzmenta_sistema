@@ -12,28 +12,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css.css">
 </head>
-<body>
+<body onload="onLoad()"> 
     <h1>Dārza sēšanas menedžmenta sistēma</h1>
+    <div class="container">
+
     <input id="vaguSkaits"
+    type="number"
     placeholder="Vagu skaits"
     aria-label="Vagu skaits">
 
     <input id="vaguGarums"
-    placeholder="Vagu garums"
-    aria-label="Vagu garums">
+    type="number"
+    placeholder="Vagu garums,m"
+    aria-label="Vagu garums, m">
     <select id="select">
-        <option value="">--Izvēlieties sējamo dārzeni--</option>
+        <option value="none">--Izvēlieties sējamo dārzeni--</option>
         <option value="Kartupeli">Kartupeļi</option>
         <option value="Redisi">Redīsi</option>
         <option value="Galda_bietes">Sarkanās Bietes</option>
         <option value="Zirni">Zirņi</option>
-        <option value="Pupas">Pupas</option>
+        <option value ="Pupas">Pupas</option>
         <option value="Sīpoli">Sīpoli</option>
         <option value="kiploki">ķiploki</option>
         <option value="Kaposti">Kāposti</option>
         <option value="Saulespukes">Saulespuķes</option>
         <option value="Sviesta_pupas">Sviesta pupas</option>
-        <option value="Kaņepes">Kaņepes</option>
+        <option value="Kanepes">Kaņepes</option>
         <option value="Dilles">Dilles</option>
         <option value="Gurkis">Gurķi</option>
         <option value="Zemenes">Zemenes</option>
@@ -43,10 +47,13 @@
         <option value="Burkani">Burkāni</option>
     </select>
     <button type="button" id="btn-launch">Aprēķināt</button>
-
-
-    <ul id="ul"></ul>
-
+    <div>
+    <img class="img-fluid" src="" id="product-image" />
+    </div>
+    </div>
+    <div>
+    <ul class="w-50 p-3 position-inherit" id="ul"></ul>
+    </div>
 
 
     <!--End of containers-->

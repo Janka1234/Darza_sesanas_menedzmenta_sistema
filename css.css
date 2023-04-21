@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(216, 201, 183);
+  text-align: center;
+  background-image: url("Bildes/darzs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5cm;
+  background-blend-mode: screen;
+  min-width: 30%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  background-attachment:inherit;
+  float: right;
+}
+
+button {
+  background-color: rgb(233, 233, 177);
+}
+
+ul {
+margin: auto;
+}
