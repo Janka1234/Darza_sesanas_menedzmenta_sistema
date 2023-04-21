@@ -23,7 +23,7 @@ class Darzeni {
   }
 
     sekluDaudzums() {
-    return Math.trunc(this.kopGarums() / (parseInt(this.atstarpe)/100) - 2);
+    return Math.trunc(this.kopGarums() / (parseInt(this.atstarpe)/100) - 2* this.vaguSkaits);
   }
     kopGarums() {
         console.log(parseInt(this.vaguGarums), parseInt(this.vaguSkaits));
